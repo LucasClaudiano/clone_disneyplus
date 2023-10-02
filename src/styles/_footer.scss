@@ -24,6 +24,13 @@
         flex-wrap: wrap;
         justify-content: center;
 
+        @media(max-width:768px){
+            display:grid ;
+            grid-template-columns: 1fr 1fr;
+            text-align: center;
+        }
+
+
         &__item{
             display: inline-block;
 
@@ -47,6 +54,10 @@
     display: flex;
     align-items: center;
 
+    @media(max-width:768px){
+        justify-content: center;
+    }
+
     img{
         height:18px; 
         width: 18px;
@@ -63,5 +74,7 @@
         option{
             color: variaveis.$corDeFundo;
         }
+
+        
     }
 }
